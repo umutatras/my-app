@@ -6,7 +6,8 @@ import { Component, ViewEncapsulation } from "@angular/core";
   styleUrl:'./about.component.css',
   imports:[],
   providers:[],
-  encapsulation:ViewEncapsulation.None
+  encapsulation:ViewEncapsulation.None,
+  selector:'app-about'
 })
 export class AboutComponent{
 
