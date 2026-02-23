@@ -6,10 +6,11 @@ import { AboutComponent } from "./about/about.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Contact, Home, AboutComponent],
+  imports: [ Contact, Home, AboutComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('my-app');
+  helloWorld: string = 'Hello World abii';
+
 }
