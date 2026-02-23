@@ -13,4 +13,11 @@ import { AboutComponent } from "./about/about.component";
 export class App {
   helloWorld: string = 'Hello World abii';
 
+  clickMe(){
+ alert('Tıklandı');
+  }
+
+  changeHellworldVariable(event:any){
+    this.helloWorld=event.target.value;
+  }
 }
