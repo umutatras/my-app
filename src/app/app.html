@@ -1,23 +1,6 @@
-<h1>{{ helloWorld }}</h1>
-<button (click)="clickMe()">Bana tıkla</button>
-<textarea (input)="changeHellworldVariable($event)"></textarea>
-<p [class]="pClassName">
-  lore5s ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.
-</p>
-
-<p class="form-control" [ngClass]="bgColor">HellWorld</p>
-<p class="form-control" [class.active]="bgColor === 'red'">HellWorld</p>
-<p [ngStyle]="{ backgroundColor: bgColor }">HellWorld</p>
-
-<input type="text" [(ngModel)]="bgColor" />
-
-<select [(ngModel)]="bgColor">
-  <option value="red">Red</option>
-  <option value="blue">Blue</option>
-  <option value="green">Green</option>
-</select>
-
-<app-contact></app-contact>
-<app-home></app-home>
-<app-about> </app-about>
-<app-todo-app></app-todo-app>
+<nav>
+  <a routerLink="/home">Home</a>
+  <a routerLink="/contact">Contact</a>
+  <a routerLink="/about">About</a>
+</nav>
+<router-outlet></router-outlet>
