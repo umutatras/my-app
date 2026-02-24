@@ -11,7 +11,7 @@ import { Router, RouterLink, RouterOutlet } from "@angular/router";
 export class App {
 
   constructor(private yonlendirici:Router) {
-    ;
+    
   }
 
   routeHomePage(){
