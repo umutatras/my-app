@@ -3,11 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { Contact } from './contact/contact';
 import { Home } from "./home/home";
 import { AboutComponent } from "./about/about.component";
-import { NgClass } from '@angular/common';
+import { NgClass, NgStyle } from '@angular/common';
 
 @Component({
   selector: 'app-root',
-  imports: [ Contact, Home, AboutComponent,NgClass],
+  imports: [Contact, Home, AboutComponent, NgClass, NgStyle],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

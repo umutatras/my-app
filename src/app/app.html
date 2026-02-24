@@ -6,7 +6,8 @@
 </p>
 
 <p class="form-control" [ngClass]="bgColor">HellWorld</p>
-<p class="form-control" [class.active]="bgColor==='red'">HellWorld</p>
+<p class="form-control" [class.active]="bgColor === 'red'">HellWorld</p>
+<p [ngStyle]="{ backgroundColor: bgColor }">HellWorld</p>
 
 <app-contact></app-contact>
 <app-home></app-home>
