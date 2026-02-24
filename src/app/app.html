@@ -9,6 +9,7 @@
 <p class="form-control" [class.active]="bgColor === 'red'">HellWorld</p>
 <p [ngStyle]="{ backgroundColor: bgColor }">HellWorld</p>
 
+<input type="text" [(ngModel)]="bgColor" />
 <app-contact></app-contact>
 <app-home></app-home>
 <app-about> </app-about>

@@ -4,10 +4,11 @@ import { Contact } from './contact/contact';
 import { Home } from "./home/home";
 import { AboutComponent } from "./about/about.component";
 import { NgClass, NgStyle } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
-  imports: [Contact, Home, AboutComponent, NgClass, NgStyle],
+  imports: [Contact, Home, AboutComponent, NgClass, NgStyle,FormsModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
