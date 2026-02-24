@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-import { RouterLink, RouterOutlet } from "@angular/router";
+import { Router, RouterLink, RouterOutlet } from "@angular/router";
 
 
 @Component({
@@ -10,4 +10,11 @@ import { RouterLink, RouterOutlet } from "@angular/router";
 })
 export class App {
 
+  constructor(private yonlendirici:Router) {
+    ;
+  }
+
+  routeHomePage(){
+  this.yonlendirici.navigate(['home']);
+  }
 }
