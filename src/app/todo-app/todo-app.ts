@@ -18,6 +18,7 @@ import { FormsModule } from '@angular/forms';
         <li>{{data}}</li>
         <button (click)="delete($index)">Delete</button>
       }
+     <!-- <li *ngFor="let data of todos; let i=index">{{data}} <button (click)="delete(i)">Delete</button></li> eski tip -->
     </ul>
   </diV>
   `,
