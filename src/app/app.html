@@ -10,6 +10,13 @@
 <p [ngStyle]="{ backgroundColor: bgColor }">HellWorld</p>
 
 <input type="text" [(ngModel)]="bgColor" />
+
+<select [(ngModel)]="bgColor">
+  <option value="red">Red</option>
+  <option value="blue">Blue</option>
+  <option value="green">Green</option>
+</select>
+
 <app-contact></app-contact>
 <app-home></app-home>
 <app-about> </app-about>
