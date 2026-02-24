@@ -5,10 +5,11 @@ import { Home } from "./home/home";
 import { AboutComponent } from "./about/about.component";
 import { NgClass, NgStyle } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { TodoApp } from "./todo-app/todo-app";
 
 @Component({
   selector: 'app-root',
-  imports: [Contact, Home, AboutComponent, NgClass, NgStyle,FormsModule],
+  imports: [Contact, Home, AboutComponent, NgClass, NgStyle, FormsModule, TodoApp],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
