@@ -1,6 +1,13 @@
 <h1>{{ helloWorld }}</h1>
 <button (click)="clickMe()">Bana tıkla</button>
 <textarea (input)="changeHellworldVariable($event)"></textarea>
+<p [class]="pClassName">
+  lore5s ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.
+</p>
+
+<p class="form-control" [ngClass]="bgColor">HellWorld</p>
+<p class="form-control" [class.active]="bgColor==='red'">HellWorld</p>
+
 <app-contact></app-contact>
 <app-home></app-home>
 <app-about> </app-about>
