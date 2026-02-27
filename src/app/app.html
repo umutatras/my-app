@@ -2,9 +2,11 @@
   <a routerLink="/home">Home</a>
   <a routerLink="/contact">Contact</a>
   <a routerLink="/about">About</a>
-  <p renklendir="asd">renke</p>
+  <p renklendir="asd">{{name | todo:"umut"}}</p>
   <button (click)="routeHomePage()">Home Button</button>
 </nav>
+  <p renklendir="asd">{{name | todo:"umut"}}</p>
+
 <form>
   <input (keyup)="checkInputValidation($event)" type="text" required>
   <button type="submit">Submit</button>
