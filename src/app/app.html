@@ -5,4 +5,8 @@
   <p renklendir="asd">renke</p>
   <button (click)="routeHomePage()">Home Button</button>
 </nav>
+<form>
+  <input (keyup)="checkInputValidation($event)" type="text" required>
+  <button type="submit">Submit</button>
+</form>
 <router-outlet></router-outlet>

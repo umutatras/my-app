@@ -14,6 +14,9 @@ export class App {
   constructor(private yonlendirici:Router) {
 
   }
+  checkInputValidation(event:any){
+    console.log(event.target.validity.valid);
+  }
 
   routeHomePage(){
   this.yonlendirici.navigate(['home']);
