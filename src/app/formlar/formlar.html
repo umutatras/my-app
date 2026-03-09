@@ -1,0 +1,6 @@
+<p>formlar works!</p>
+
+<form #saveForm="ngForm" (ngSubmit)="save(saveForm)">
+  <input type="text" name="name" ngModel>
+  <button type="submit">Save</button>
+</form>
