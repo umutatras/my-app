@@ -1,0 +1,11 @@
+<p>reactiveforms works!</p>
+
+<form  [formGroup]="group" (ngSubmit)="save()">
+  <label for="title">Name:</label>
+  <input id="title" formControlName="title" />
+
+  <label for="compoleted">compoleted:</label>
+  <input id="compoleted" formControlName="compoleted" />
+
+  <button type="submit">Submit</button>
+</form>
